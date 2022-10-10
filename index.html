@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Finder</title>
+  </head>
+  <body>
+    <nav>
+      <input type="radio" id="new-movies" name="film" value="new-movies" />
+      <label for="New Movies">Latest movies, 2014 or newer</label>
+
+      <input type="radio" id="avenger" name="film" value="avenger" />
+      <label for="Avenger">Avenger movies</label>
+
+      <input type="radio" id="x-men" name="film" value="x-men" />
+      <label for="X-Men">X-Men movies</label>
+
+      <input type="radio" id="princess" name="film" value="princess" />
+      <label for="Princess">Princess movies</label>
+
+      <input type="radio" id="batman" name="film" value="batman" />
+      <label for="Batman">Batman movies</label>
+    </nav>
+
+    <div class="movie-container">
+      <ul id="movie-list"></ul>
+    </div>
+  </body>
+  <script src="movies.js"></script>
+  <script src="main.js"></script>
+</html>
