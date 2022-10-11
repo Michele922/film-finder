@@ -6,6 +6,8 @@ const addMoviesToDom = (movie) => {
   const newAnchorTag = document.createElement("a");
   const image = document.createElement("img");
 
+  listElement.classList.add("movie-list-item");
+
   list.appendChild(listElement);
   listElement.appendChild(newAnchorTag);
   newAnchorTag.appendChild(image);
