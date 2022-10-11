@@ -294,33 +294,16 @@ const getAllLatestMovies = () => {
   });
 };
 
-const getAvengerMovies = () => {
+const getMovieByTitle = (title) => {
   return movies.filter((movie) => {
-    return movie.title.includes("Avengers");
-  });
-};
-
-const getXMenMovies = () => {
-  return movies.filter((movie) => {
-    return movie.title.includes("X-Men");
-  });
-};
-
-const getPrincessMovies = () => {
-  return movies.filter((movie) => {
-    return movie.title.includes("Princess");
-  });
-};
-
-const getBatmanMovies = () => {
-  return movies.filter((movie) => {
-    return movie.title.includes("Batman");
+    return movie.title.includes(title);
   });
 };
 
 console.log("Latest movies (from 2014): ", getAllLatestMovies());
-console.log(getAllMovies());
-console.log("all the avenger movies", getAvengerMovies());
-console.log("X-Men", getXMenMovies());
-console.log("Princess", getPrincessMovies());
-console.log("Batman", getBatmanMovies());
+console.log(getMovieByTitle());
+console.log("all the avenger movies", getMovieByTitle());
+console.log("X-Men", getMovieByTitle());
+console.log("Princess", getMovieByTitle());
+console.log("Batman", getMovieByTitle());
+console.log(getMovieByTitle("Batman"));
