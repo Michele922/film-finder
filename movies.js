@@ -283,9 +283,7 @@ const movies = [
 console.log("all movies in list:", movies);
 
 const getAllMovies = () => {
-  return movies.filter((movie) => {
-    return movie.type === "movie";
-  });
+  return movies;
 };
 
 const getAllLatestMovies = () => {

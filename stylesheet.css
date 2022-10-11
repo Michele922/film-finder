@@ -1,6 +1,5 @@
-body {
-  padding: 0;
-  margin: 0;
+* {
+  box-sizing: border-box;
   background-color: black;
   color: white;
 }
@@ -17,9 +16,20 @@ h1 {
   justify-content: space-evenly;
 }
 
+.movie-container {
+  width: 100%;
+}
 .movie-container #movie-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  #movie-list {
+    width: 100%;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */
